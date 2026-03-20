@@ -1,0 +1,23 @@
+body {
+    background-color: #e9e2da;
+  }
+  
+ div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  p {
+    color: #59554e;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  h3 {
+    color: #a1c1be;
+    text-align: center;
+    font-size: 60px;
+  }
