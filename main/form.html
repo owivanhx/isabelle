@@ -12,12 +12,27 @@
 <body>
     <div class="formulario">
         <h3> cadastro ♰ </h3>
+        
         <p> adicione as informações </p>
-        <input type="text" id="titulo" placeholder="escreva o titulo"><br>
-        <input type="url" id="imagem" palceholder="add o URL"><br>
-        <textarea id="paragrafo" placeholder="escreva..."></textarea>
-        <button type="submit">adicionar</button>
-
+        
+        <form id="meuformulario">
+            
+        <label for="titulo">nome do personagem</label>
+        <input type="text" id="titulo" placeholder="escreva.." required><br>
+            
+        <label for="imagem">foto do personagem</label>
+        <input type="url" id="imagem" palceholder="escreva..." required><br>
+            
+        <label for="descricao">descrição da imagem/personagem</label>
+        <textarea id="paragrafo" placeholder="escreva..." required></textarea>
+            
+        <button type="submit"> adicionar ⟡˖ ࣪</button>
+        </form>
 </div>
+    
 <script scr= "script.js"></script>
+    
+<div id="colecao"></div>
+    
 </body>
+</html>
