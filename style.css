@@ -5,7 +5,7 @@ body {
     font-style: normal;
   }
   
- div {
+ .card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,8 +16,6 @@ body {
   h1 {
     color: #59554e;
     text-align: center;
-    font-family: "Garamond", Garamond, serif;
-    font-size: 60px;
   }
 
   h2 {
@@ -26,6 +24,6 @@ body {
     font-size: 20px;
   }
 
-h3 {
-    color: #ffffff;
+.cadastro {
+    color: #59554e;
 }
