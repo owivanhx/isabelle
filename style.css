@@ -1,5 +1,8 @@
 body {
     background-color: #e9e2da;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
  div {
@@ -22,3 +25,7 @@ body {
     text-align: center;
     font-size: 20px;
   }
+
+h3 {
+    color: #ffffff;
+}
