@@ -1,37 +1,35 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="formstyle.css">
-    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ㅤ🪽 ㅤㅤ◞ㅤㅤform </title>
-    <link rel="icon" type="imagem/x-icon" href="main/angel.png">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="icon" type="image/x-icon" href="main/angel.png">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
-    <script scr= "script.js"></script>
 </head>
 
 <body>
     <div class="formulario">
         <h3> cadastro ♰ </h3>
-        
         <p> adicione as informações </p>
         
         <form id="meuformulario">
+            <label for="titulo">nome do personagem</label>
+            <input type="text" id="titulo" placeholder="escreva.." required><br>
             
-        <label for="titulo">nome do personagem</label>
-        <input type="text" id="titulo" placeholder="escreva.." required><br>
+            <label for="imagem">foto do personagem</label>
+            <input type="url" id="imagem" placeholder="escreva..." required><br>
             
-        <label for="imagem">foto do personagem</label>
-        <input type="url" id="imagem" palceholder="escreva..." required><br>
+            <label for="paragrafo">descrição da imagem/personagem</label>
+            <textarea id="paragrafo" placeholder="escreva..." required></textarea>
             
-        <label for="descricao">descrição da imagem/personagem</label>
-        <textarea id="paragrafo" placeholder="escreva..." required></textarea>
-            
-        <button type="submit"> adicionar ⟡˖ ࣪</button>
+            <button type="submit"> adicionar ⟡˖ ࣪</button>
         </form>
-</div>
+    </div>
     
-<div id="colecao"></div>
+    <div id="colecao"></div>
     
+    <script src="script.js"></script>
 </body>
 </html>
