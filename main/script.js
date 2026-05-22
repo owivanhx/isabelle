@@ -24,19 +24,21 @@ formulario.addEventListener('submit', function(evento){
     `;
 
     colecao.innerHTML += novoCard;
-    formulario.reset(); // Limpa o formulário após o envio
+    formulario.reset();
 });
 
+renderizarCards(novo);
 
-function renderizarCards(my little pony){
+
+function renderizarCards(mlp){
         const novoCard = `
         <div class="card"> 
             <div class="letras">
-                <h3>${novo.titulo}</h3>
-                <p>${novo.texto}</p>
+                <h3>${mlp.titulo}</h3>
+                <p>${mlp.texto}</p>
             </div>
             <div class="img">
-                <img src="${novo.imagem}" alt="${novo.titulo}"/>
+                <img src="${mlp.imagem}" alt="${mlp.titulo}"/>
             </div>
         </div>
     `;
