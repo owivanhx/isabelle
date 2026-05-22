@@ -1,35 +1,27 @@
 const formulario = document.getElementById('meuformulario');
-const colecao = document.getElementById('colecao'); // Faltava selecionar a div da coleção
+const colecao = document.getElementById('colecao');
 
+// Evento que escuta o envio do formulário
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault(); // Impede a página de recarregar
 
+    // Cria o objeto com os dados dos inputs
     const novo = {
         titulo: document.getElementById('titulo').value,
         imagem: document.getElementById('imagem').value,
         texto: document.getElementById('paragrafo').value
     };
 
-    // Correção nas aspas de "letras" e no alt da imagem
-    const novoCard = `
-        <div class="card"> 
-            <div class="letras">
-                <h3>${novo.titulo}</h3>
-                <p>${novo.texto}</p>
-            </div>
-            <div class="img">
-                <img src="${novo.imagem}" alt="${novo.titulo}"/>
-            </div>
-        </div>
-    `;
+    // Chama a função abaixo passando os dados capturados
+    renderizarCards(novo);
 
-    colecao.innerHTML += novoCard;
+    // Limpa os campos do formulário
     formulario.reset();
 });
 
-
-/* function renderizarCards(mlp){
-        const novoCard = `
+// Função responsável por construir o HTML e adicionar na tela
+function renderizarCards(mlp){
+    const novoCard = `
         <div class="card"> 
             <div class="letras">
                 <h3>${mlp.titulo}</h3>
@@ -43,4 +35,3 @@ formulario.addEventListener('submit', function(evento){
 
     colecao.innerHTML += novoCard;
 }
-/*
