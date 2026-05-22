@@ -27,10 +27,8 @@ formulario.addEventListener('submit', function(evento){
     formulario.reset();
 });
 
-renderizarCards(novo);
 
-
-function renderizarCards(mlp){
+/* function renderizarCards(mlp){
         const novoCard = `
         <div class="card"> 
             <div class="letras">
@@ -45,3 +43,4 @@ function renderizarCards(mlp){
 
     colecao.innerHTML += novoCard;
 }
+/*
