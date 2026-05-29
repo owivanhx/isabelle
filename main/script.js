@@ -1,33 +1,19 @@
 const formulario = document.getElementById('meuformulario');
 const colecao = document.getElementById('colecao');
 
-// 1. VERIFICAÇÃO: Busca dados existentes ou inicializa um array vazio se não houver nada
-let galeria = JSON.parse(localStorage.getItem('galeria')) || [];
-
-// 2. CARREGAMENTO INICIAL: Renderiza os cards que já estavam salvos ao carregar a página
-galeria.forEach(card => renderizarCards(card));
-
 // Evento que escuta o envio do formulário
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault(); // Impede a página de recarregar
 
-    // Cria o objeto com os dados dos inputs
     const novo = {
-        titulo: document.getElementById('nome').value,
+        titulo: document.getElementById('titulo').value,
         imagem: document.getElementById('imagem').value,
         texto: document.getElementById('paragrafo').value
     };
 
-    // 3. SALVAR: Adiciona o novo objeto ao array 'galeria'
-    galeria.push(novo);
-
-    // 4. ATUALIZAR LOCALSTORAGE: Salva a lista atualizada como uma string JSON
-    localStorage.setItem('galeria', JSON.stringify(galeria));
-
     // Chama a função abaixo passando os dados capturados
     renderizarCards(novo);
 
-    // Limpa os campos do formulário
     formulario.reset();
 });
 
